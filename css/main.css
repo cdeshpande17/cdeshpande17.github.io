@@ -1162,6 +1162,7 @@ input::-moz-focus-inner {
   height: 1px;
   width: 200px;
   background-color: rgba(242, 242, 242, 0.1);
+  background-image: url(../images/tech_background.png);
   text-align: center;
 }
 
@@ -2004,7 +2005,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #portfolio {
-  background: #FFFFFF;
+  background-image: url(../images/tech_background.jpeg);
   min-height: 800px;
   position: relative;
   padding: 0;
