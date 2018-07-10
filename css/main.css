@@ -1162,7 +1162,6 @@ input::-moz-focus-inner {
   height: 1px;
   width: 200px;
   background-color: rgba(242, 242, 242, 0.1);
-  background-image: url(../images/tech_background.png);
   text-align: center;
 }
 
@@ -2005,14 +2004,14 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #portfolio {
-  background-image: url(../images/tech_background.png);
+  background-color: #FFFFFF
   min-height: 800px;
   position: relative;
   padding: 0;
 }
 #portfolio .intro-wrap {
   padding: 15rem 0 21rem;
-  background: #111111;
+  background-image: url(../images/tech_background.png);
 }
 #portfolio .section-intro h3 {
   color: rgba(242, 242, 242, 0.5);
