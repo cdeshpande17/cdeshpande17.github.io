@@ -2005,7 +2005,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
  *
  * ------------------------------------------------------------------- */
 #portfolio {
-  background-image: url(../images/tech_background.jpeg);
+  background-image: url(../images/tech_background.png);
   min-height: 800px;
   position: relative;
   padding: 0;
