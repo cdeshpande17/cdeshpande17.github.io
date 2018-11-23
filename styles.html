@@ -397,6 +397,7 @@
 	      	
 	   </div> <!-- end row -->
 
+			
 	   <div class="row">
 
 		   <div class="col-six tab-full">
@@ -410,7 +411,7 @@
 			      </div>
 			      <div>
 			        	<label for="sampleRecipientInput">Reason for contacting</label>
-			        	<div class="ss-custom-select">
+			        	<div class="ss-custom-slect">
 			        		<select class="full-width" id="sampleRecipientInput">
 				        		<option value="Option 1">Questions</option>
 				        		<option value="Option 2">Report</option>
@@ -571,7 +572,17 @@
    	</div> <!-- end row contact-content -->
 		
 	</section> <!-- end contact -->
-
+	<section id="skills">
+		<div class="progress-bar"></div>
+		<div class="progress-bar" data-percent="60" data-duration="1000" data-color="#ccc,yellow"></div>
+		<div class="progress-bar" data-percent="20" data-color="#a456b1,#12b321"></div>
+		<script>
+			$(".progress-bar").loading();				// you can load automatically
+			$('input').on('click', function () {		// use some events to control the loading like this 
+				 $(".progress-bar").loading();
+			});
+		</script>
+	</section>
 
 	<!-- footer
    ================================================== -->
@@ -660,6 +671,10 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="jQuery-plugin-progressbar.js"></script>
 
 </body>
 

@@ -25,6 +25,9 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="jQuery-plugin-progressbar.js"></script>
+
 
    <!-- favicons
 	================================================== -->
@@ -57,8 +60,9 @@
 			<ul class="nav-list">
 				<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
 				<li><a class="smoothscroll" href="#about" title="">About</a></li>
-				<li><a class="smoothscroll" href="#services" title="">Services</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">Works</a></li>
+				<li><a class="smoothscroll" href="#services" title="">Work Experience</a></li>
+				<li><a class="smoothscroll" href="#services" title="">Skills</a></li>
+				<li><a class="smoothscroll" href="#portfolio" title="">Projects</a></li>
 				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>						
 			</ul>			
 
@@ -185,7 +189,7 @@
 	      		<span class="icon"><img class="principal.png" src="/images/principal.png"></img></i></span>            
 
 	            <div class="service-content">
-	            	<h3 class="h05">Business Analytics <br/> Software Engineer at <br/> Principal Financial Group</h3>
+	            	<h3 class="h05">BIA Data Engineer at <br/> Principal Financial Group</h3>
 		            <p>This past summer, I worked as part of an Agile BIA team to develop Machine Learning Web Service in Microsoft Azure cloud platform. This web application helps the company classify and reformat data files to eliminate the need for manual refactoring. I also worked on converting the Data Warehouse from a Solaris based platform to a Linux based one. which enabled faster and more efficient data queries. I additionally helped to perform ETL transformations on queried data in Informatica for use in Financial Reporting Services.
 
 	         		</p>	         		
@@ -252,19 +256,51 @@
 
    </section> <!-- end services -->
 
+   <!-- Skills ==================================================== -->
+<section id="skills"> 
 
-   <!-- portfolio
-   ================================================== -->
+
+ 
+   	<div class="overlay"></div>
+   	<div class="gradient-overlay"></div>
+   	
+   	<div class="row narrow section-intro with-bottom-sep animate-this">
+   		<div class="col-full" style="color:#FFFFFF">
+   			
+
+   			   <h1>Skills and Software Tools</h1>
+   			
+   	   </div> <!-- end col-full -->
+   	</div> <!-- end row -->
+   	<div class="row half-bottom">
+   				      <ul class="stats-tabs">
+				   <li> <a href="#">90% <em>Java</em> </a></li>
+				   <li><a href="#">85%<em>C#</em></a></li>
+				   <li><a href="#">75%<em>Python</em></a></li>
+				   <li><a href="#">60%<em>C++</em></a></li>
+				   <li><a href="#"> 80%<em>HTML/CSS</em></a></li>
+				   <li><a href="#">90%<em>SQL</em></a></li>
+				   <li><a href="#">50%<em>Powershell</em></a></li>
+				   <li><a href="#">20%<em>React</em></a></li>
+
+				</ul>	      		
+
+		   </div>	      	
+
+		</div> <!-- end row -->
+
+</section>
+   <!-- portfolio ================================================== -->
    <section id="portfolio">
    	
    	<div class="intro-wrap">
 
    		<div class="row narrow section-intro with-bottom-sep animate-this">
 	   		<div class="col-twelve">
-	   			<h3>Showcase</h3>
-		   		<h1>See Our Featured Projects.</h1>  			
-		   		
-		   		<p class="lead">Lorem ipsum Dolor adipisicing nostrud et aute Excepteur amet commodo ea dolore irure esse Duis nulla sint fugiat cillum ullamco proident aliquip quis qui voluptate dolore veniam Ut laborum non est in officia.</p>	   			
+		   		<h1>Articles</h1>  			
+		     	<span class="folio-types">
+			     	A place for me to express my thoughts on topics such as tech news and scientific discoveries.
+			   </span>		
 	   		</div>   		
 	   	</div> <!-- end row section-intro -->   		
 
@@ -279,13 +315,14 @@
 	                  <a href="#" class="overlay">
 	                  	<img src="images/portfolio/shutterbug.jpg" alt="Skaterboy">	                     
 	                     <div class="item-text">
-	                     	<span class="folio-types">
-		     					      Web Development
-		     					   </span>
-		     					   <h3 class="folio-title">Shutterbug</h3>	     					   
+	                     	
+		     					   <h3 class="folio-title">Video Game Popularity Projector</h3>	     		
+		     					   <span class="folio-types">
+		     					      Used popularity trends in previously released video games to develop a model which projects popularity trends of newer video games including Fortnite.
+		     					   </span>		   
 		     					</div>                                        
 	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
+	                  <a href="https://github.com/ProjectOneApps/VideoGameStatistics" class='details-link' title="details">
 	                  	<i class="icon-link"></i>
 	                  </a>
 	               </div> <!-- end item-wrap -->
