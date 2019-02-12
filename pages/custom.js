@@ -15,7 +15,7 @@ init();
 function init(){
 
 
-
+    arSetPatternDetectionMode(<#ARHandle handle#>, AR_MATRIX_CODE_DETECTION);
     container = document.getElementById('container');
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
@@ -46,19 +46,19 @@ function init(){
     });
 
     arContext = new THREEx.ArToolkitContext({
-        cameraParametersUrl: './assets/data/camera_para.dat',
+        cameraParametersUrl: '/pages/camera_para.dat',
         detectionMode: 'mono',
     });
 
     arMarker[0] = new THREEx.ArMarkerControls(arContext, camera, {
         type : 'pattern',
-        patternUrl : './pages/marker1.patt',
+        patternUrl : '/pages/marker1.patt',
         changeMatrixMode: 'cameraTransformMatrix'
     });
 
     arMarker[1] = new THREEx.ArMarkerControls(arContext, camera, {
         type : 'pattern',
-        patternUrl : './pages/marker2.patt',
+        patternUrl : '/pages/marker2.patt',
         changeMatrixMode: 'cameraTransformMatrix'
     });
 
