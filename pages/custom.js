@@ -14,8 +14,6 @@ init();
 
 function init(){
 
-
-    arSetPatternDetectionMode(<#ARHandle handle#>, AR_MATRIX_CODE_DETECTION);
     container = document.getElementById('container');
 
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
