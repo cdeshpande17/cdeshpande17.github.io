@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> simple ar.js </title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        
-		<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-		<script src="https://chinmaydeshpande.com/pages/Script.js"> </script>
 
-    </head>
-    <body>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+	<script src="https://chinmaydeshpande.com/pages/Script.js"> </script>
+
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene embedded arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
         <div id="container"></div>
 
         <script src="index.js"></script>
+    <a-entity camera></a-entity>
+    </a-scene>
+
         
     </body>
 </html>
-
-
