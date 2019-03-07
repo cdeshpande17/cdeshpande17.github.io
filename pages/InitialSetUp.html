@@ -14,16 +14,13 @@
     <body style='margin : 0px; overflow: hidden;'>
       <div class='speech-bubble'> </div>
         <a-scene embedded arjs cursor='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
-          <a-assets>
-            <a-asset-item id="pyra-obj" src="https://chinmaydeshpande.com/pages/builder-models/Pyra.obj"></a-asset-item>
-            <a-asset-item id="biggie-obj" src="https://chinmaydeshpande.com/pages/builder-models/Biggie.obj"></a-asset-item>
 
           <a-marker id="pyra-marker" type="pattern" url="builder-markers/pyra.patt">
-            <a-entity id="pyra" obj-model="obj: #pyra-obj;" material="color: green" rotation="0 180 0" position="0 0 0.5" scale="0.15 0.15 0.15"></a-entity>
+            <a-entity id="pyra" material="color: green" rotation="0 180 0" position="0 0 0.5" scale="0.15 0.15 0.15"></a-entity>
           </a-marker>
 
           <a-marker id="pyra-marker" type="pattern" url="builder-markers/pyra.patt">
-            <a-entity id="pyra" obj-model="obj: #pyra-obj;" material="color: green" rotation="0 180 0" position="0 0 0.5" scale="0.15 0.15 0.15"></a-entity>
+            <a-entity id="pyra" material="color: green" rotation="0 180 0" position="0 0 0.5" scale="0.15 0.15 0.15"></a-entity>
           </a-marker>
 
         <a-entity camera></a-entity>
