@@ -1,13 +1,17 @@
-function UserState() {
-	this.tools = [];
-}
 
-UserState.prototype.addTool = function(tool) {
-	this.tools.push(tool);
-}
+AFRAME.registerComponent('markerhandler', {
 
-UserState.prototype.hasCalendarTool = function(calendar) {
-	return calendar.tool && this.tools.includes(calendar.tool.name);
-}
+    init: function() {
+        const animatedMarker = document.querySelector("#animated-marker");
+        const aEntity = document.querySelector("#animated-model");
 
-var UserState = new UserState();
+        // every click, we make our model grow in size :)
+        animatedMarker.addEventListener('click', function(ev, target){
+            const intersectedElement = ev && ev.detail && ev.detail.intersectedEl;
+            if (aEntity && intersectedElement === aEntity) {
+                const scale = aEntity.getAttribute('scale');
+                Object.keys(scale).forEach((key) => scale[key] = scale[key] + 1);
+                aEntity.setAttribute('scale', scale);
+            }
+        });
+}});
